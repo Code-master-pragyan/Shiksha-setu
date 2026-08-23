@@ -17,9 +17,9 @@ export interface MasteryTier {
 }
 
 export const MASTERY_TIERS: MasteryTier[] = [
-  { min: 0, max: 0.4, label: "Beginner", color: "text-red-500 bg-red-500/10" },
-  { min: 0.4, max: 0.7, label: "Intermediate", color: "text-amber-500 bg-amber-500/10" },
-  { min: 0.7, max: 1.0, label: "Advanced", color: "text-emerald-500 bg-emerald-500/10" }
+  { min: 0, max: 0.4, label: "Beginner", color: "#ef4444" },
+  { min: 0.4, max: 0.7, label: "Intermediate", color: "#f59e0b" },
+  { min: 0.7, max: 1.0, label: "Advanced", color: "#10b981" }
 ];
 
 export function getMasteryTier(score: number): MasteryTier | undefined {
