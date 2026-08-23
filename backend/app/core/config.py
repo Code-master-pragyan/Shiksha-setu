@@ -6,7 +6,7 @@ class Settings(BaseSettings):
     DATABASE_URL: Optional[str] = None
     TEST_DATABASE_URL: Optional[str] = None
     GEMINI_EMBEDDING_MODEL: str = "text-embedding-004"
-    GEMINI_GENERATION_MODEL: str = "gemini-3.6-flash"
+    GEMINI_GENERATION_MODEL: str = "gemini-1.5-flash"
     ENVIRONMENT: str = "development"
     DEBUG: bool = True
     JWT_SECRET_KEY: Optional[str] = None
