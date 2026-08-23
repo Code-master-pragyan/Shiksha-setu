@@ -72,7 +72,8 @@ class GeminiProvider:
 2. The question MUST be answerable strictly using the provided context.
 3. If multiple_choice, provide exactly 4 options.
 4. Adjust the complexity based on the Learning Level (beginner: recall, intermediate: understanding, advanced: analysis).
-5. Output must match the requested JSON schema."""
+5. Output must match the requested JSON schema.
+6. CRITICAL: The question MUST be a self-contained, text-based conceptual question. NEVER ask questions that rely on viewing images, diagrams, page layouts, or figures (e.g., do not ask "What does Figure 1 show?")."""
 
         try:
             response = self.client.models.generate_content(
